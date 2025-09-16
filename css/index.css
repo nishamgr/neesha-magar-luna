@@ -1,7 +1,16 @@
 body {
+    padding-top: 70px;
     background-color:	#d7c1b3;
     color: #333;
     font-family:'Times New Roman', Times, serif;
+}
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #f6f0f0;
+    padding: 1em;
+    z-index: 1000;
+
 }
 
 h1 {
@@ -17,7 +26,7 @@ section {
     border: 2px solid #ccc;
 }
 
-#About {
+#about {
     text-align: center;
     background-color: #faf6e9;
     list-style: none;
@@ -26,29 +35,29 @@ section {
     justify-content: center;
 }
 
-#About images {
+#about images {
     border-radius: 50%;
     width: 200px;
     height: 200px;
     object-fit: cover;
 }
 
-#Experiences {
+#experiences {
     background-color: #ece8d9;
 }
 
-#Experiences ul {
+#experiences ul {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     list-style: none;
     background-color: #ece8d9;
-    padding: 0;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
-
 }
 
-#Experiences li {
+#experiences li {
     display: inline-block;
     background-color: rgb(249, 246, 246);
     color: #333;
@@ -59,29 +68,83 @@ section {
     transition: transform 0.2s ease;
   }
   
-#Experiences li:hover {
+#experiences li:hover {
     transform: scale(1.03);
   }
 
-#Connect {
+  .job{
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+  }
+  .job-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .job-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .job-dates{
+    color: #777;
+    font-size: 0.9em;
+  }
+  .job-description {
+    margin-top: 0.5em;
+  }
+
+#skills {
+    background-color: #ece8d9;
+}
+
+#skills ul{
+    display: inline-block;
+    background-color: rgb(249, 246, 246);
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+#skills li{
+    display: inline-block;
+    background-color: rgb(249, 246, 246);
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+#skills li:hover {
+    transform: scale(1.03);
+  }
+
+#connect {
     background-color: #c7b198;
 
 }
 
-#Connect ul {
+#connect ul {
+    padding: 20px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap; 
     gap: 20px;
     justify-content: none;
 }
 
-#Connect a {
+#connect a {
     color: rgb(24, 24, 26);
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-#Connect a:hover {
+#connect a:hover {
     color: #0b5ed7;
     transform: scale(1.2);
 }
