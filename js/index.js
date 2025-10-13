@@ -53,15 +53,17 @@ form.addEventListener('submit', function(event) {
    const newMessage = document.createElement("li");
 
    newMessage.innerHTML = `
-    <a href="mailto:${usersEmail}">${usersName}</a>
-    <span>${usersMessahe}</span>`;
+    <a href="mailto:${name}">${email}</a>
+    <span>${message}</span>`;
 
 
    const removeButton = document.createElement("button"); //button element
-   removeButton.innerText = "remove";  //set inner text to  "remove" 
+   removeButton.innerText = "Remove";  //set inner text to  "remove" 
    removeButton.setAttribute("type","button"); //set the type attribute to button
 
-   removeButton.addEventListener("Click", function(){  //added eventListner to remove button
+   removeButton.classList.add("removeButton"); 
+
+    removeButton.addEventListener("click", function(){  //added eventListner to remove button
     const entry = removeButton.parentNode; //find parent element
     entry.remove(); //removes entry ele from DOM
    });

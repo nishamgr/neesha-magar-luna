@@ -31,8 +31,8 @@ nav {
     display: flex;
     background-color: rgb(34, 37, 49);
   }
-/*
-  .ham-menu {
+
+  /* .ham-menu {
     height: 50px;
     width: 50px;
     margin-left: auto;
@@ -81,8 +81,9 @@ nav {
   }
 
   .nav a {
+    display: inline-block;
     color: white;
-    padding: 8px 16px;
+    padding: 10px;
     text-decoration: none;
     font-size: 17px;
   }
@@ -107,6 +108,7 @@ nav {
   margin-left: auto;
   font-size: 24px;
   cursor: pointer;
+  display: none;
 }
   
   /* navigation responsive styles  */
@@ -310,6 +312,13 @@ nav {
   align-items: center;
 }
 
+#btn-submit:active{
+  background-color: #0056b3;
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+#btn-submit,
 #contact input,
 #contact textarea {
   width: 100%;
@@ -318,6 +327,12 @@ nav {
   border-radius: 6px;
   border: 1px solid #ccc;
   background: #f9f9f9;
+}
+
+#btn-submit:hover {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
 }
 
 #contact.zoomed {
@@ -334,3 +349,19 @@ nav {
   margin-bottom: 6px;
 }
 
+.removeButton {
+  margin-left: 15px;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.removeButton:hover {
+  background-color: #c0392b;
+  color: white;
+}
