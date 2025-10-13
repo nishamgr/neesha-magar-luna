@@ -3,26 +3,25 @@
 <html>
     <head>
         <title> Neesha Magar's Portfolio </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport"  content="width=device-width", initial-scale="1.0"/>
         <meta name="author" content="Neesha Magar"/>
         <link rel="stylesheet" href="styles.css"/>
         <link rel="stylesheet" href="css/index.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>   
-     </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>    </head>
     <body>
-        
-        <nav class="nav" id="myTopnav">
+
+        <div class="nav" id="myTopnav">
             <a href="#about" class="active">About</a>
-            <a href="#experience">Experiences</a>
+            <a href="#experiences">Experiences</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#connect">Connect</a>
-            <a href="#contact">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <a class="icon" >
               <i class="fa fa-bars"></i>
             </a>
-          </nav>      
+          </div>
         
+
         <h1>Neesha Magar</h1>
 
         <section id="about">
@@ -46,17 +45,18 @@
             </p>
         </section>
 
-        <section id="experience">
+        <section id="experiences">
             <h2> Experiences </h2>
             <div class="job">
                 <div class="job-header">
                     <h3 class="job-title">Completed Web Development course </h3>
-                    <span class="job-dates">January 2024 - July 2024</span>
+                    <span class=":job-dates">January 2024 - July 2024</span>
                 </div>
                 <p class="job-description">
                     Completed a comprehensive course covering HTML, CSS, and Javascript. Built about me page.
                 </p>
                 </div>
+            </ul>
         </section>
 
         <section id="projects">
@@ -83,25 +83,7 @@
                 </a></li>
             </ul>
         </section>
-        <!-- message form -->
-         <section id="contact">
-            <h2> Leave a Message </h2>
-            <form name="leave_message" id="messageForm">
-                <label for="fullname">Full Name:<label><br>
-                <input type="text" id="name" name="usersName" placeholder="Enter your name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="usersEmail" placeholder="Enter your Email" required><br>
-                <label name="message">Message:</label><br>
-                <textarea id="name" name="usersMessage" placeholder="Enter your message" required></textarea><br>
-                <input type="submit" value="Submit">        
-            </form> 
-         </section>
 
-         <section id="messages">
-            <h2>Messages</h2>
-            <ul></ul>
-
-         </section>
         <footer> </footer>
 
         <script src="js/index.js"></script>
