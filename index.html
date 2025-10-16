@@ -1,109 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-    <head>
-        <title> Neesha Magar's Portfolio </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Neesha Magar"/>
-        <!-- <link rel="stylesheet" href="styles.css"/> -->
-        <link rel="stylesheet" href="css/index.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>   
-     </head>
-    <body>
-        
-        <nav class="nav" id="myTopnav">
-            <a href="#about" class="active">About</a>
-            <a href="#experience">Experiences</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#connect">Connect</a>
-            <a href="#contact">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </nav>      
-        
-        <h1>Neesha Magar</h1>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="images/Leo.JPG" alt="My Pet Sitting" height="300">
-            <h1>Hello, I am Neesha!</h1>
-            <p>I'm a curious and creative professiional with a passion for both analytics and UI/UX design.
-                I love diving into data uncover insights that inform better decisions, 
-                while also designing intuitive, user-centered experiences that make 
-                technology feel seamless and engaging. 
+<head>
+    <title> Neesha Magar's Portfolio </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Neesha Magar" />
+    <!-- <link rel="stylesheet" href="styles.css"/> -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <nav class="nav" id="myTopnav">
+        <a href="#about" class="active">About</a>
+        <a href="#experience">Experiences</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#connect">Connect</a>
+        <a href="#leaveamessage">Leave Message</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <h1>Neesha Magar</h1>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/Leo.JPG" alt="My Pet Sitting" height="300">
+        <h1>Hello, I am Neesha!</h1>
+        <p>I'm a curious and creative professiional with a passion for both analytics and UI/UX design.
+            I love diving into data uncover insights that inform better decisions,
+            while also designing intuitive, user-centered experiences that make
+            technology feel seamless and engaging.
+        </p>
+
+        <p>Currently, I work as a Team Trainer at Whole Foods Market, where I support team growth,
+            coach new hires, and help foster a positive, efficient work environment. Outside of work,
+            I’m actively learning JavaScript through Code the Dream, building my front-end development
+            skills and exploring how code, design, and data come together to shape great digital products.
+        </p>
+
+        <p>Whether it’s optimizing a user journey or analyzing performance metrics, I enjoy the process of solving
+            problems and continuously improving. I’m always looking to grow, experiment, and collaborate on meaningful,
+            impactful work.
+        </p>
+    </section>
+
+    <section id="experience">
+        <h2> Experiences </h2>
+        <div class="job">
+            <div class="job-header">
+                <h3 class="job-title">Completed Web Development course </h3>
+                <span class="job-dates">January 2024 - July 2024</span>
+            </div>
+            <p class="job-description">
+                Completed a comprehensive course covering HTML, CSS, and Javascript. Built about me page.
             </p>
+        </div>
+    </section>
 
-            <p>Currently, I work as a Team Trainer at Whole Foods Market, where I support team growth,
-                coach new hires, and help foster a positive, efficient work environment. Outside of work, 
-                I’m actively learning JavaScript through Code the Dream, building my front-end development 
-                skills and exploring how code, design, and data come together to shape great digital products. 
-            </p>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+        </ul> <!--Empty for now-->
+    </section>
 
-            <p>Whether it’s optimizing a user journey or analyzing performance metrics, I enjoy the process of solving 
-                problems and continuously improving. I’m always looking to grow, experiment, and collaborate on meaningful, impactful work.
-            </p>
-        </section>
-
-        <section id="experience">
-            <h2> Experiences </h2>
-            <div class="job">
-                <div class="job-header">
-                    <h3 class="job-title">Completed Web Development course </h3>
-                    <span class="job-dates">January 2024 - July 2024</span>
-                </div>
-                <p class="job-description">
-                    Completed a comprehensive course covering HTML, CSS, and Javascript. Built about me page.
-                </p>
-                </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul></ul> <!--Empty for now-->
-        </section>
-        
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills-list"> 
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
             <li>Leanred HTML and CSS</li>
-            </ul>
-        </section>
+        </ul>
+    </section>
 
-        <section id="connect">
-            <h2>Connect</h2>
-            <ul>
-                <li><a href= "https://www.linkedin.com/in/neeshamagar/" target="_blank">
+    <section id="connect">
+        <h2>Connect</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/neeshamagar/" target="_blank">
                     <i class="fab fa-linkedin fa-2x"></i>
                 </a>
             </li>
-                <li><a href="https://github.com/nishamgr" target="_blank">
+            <li><a href="https://github.com/nishamgr" target="_blank">
                     <i class="fab fa-github fa-2x"></i>
                 </a></li>
-            </ul>
-        </section>
-        <!-- message form -->
-         <section id="contact">
-            <h2> Leave a Message </h2>
-            <form name="leave_message" id="messageForm">
-                <label for="fullname">Full Name:<label><br>
-                <input type="text" id="name" name="usersName" placeholder="Enter your name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="usersEmail" placeholder="Enter your Email" required><br>
-                <label name="message">Message:</label><br>
-                <textarea id="name" name="usersMessage" placeholder="Enter your message" required></textarea><br>
-                <button id="btn-submit" type="submit">Submit</button>       
-            </form> 
-         </section>
+        </ul>
+    </section>
+    <!-- message form -->
+    <section id="leaveamessage">
+        <h2> Leave a Message </h2>
+        <form name="leave_message" id="messageForm">
+            <label for="fullname">Full Name:<label><br>
+                    <input type="text" id="name" name="usersName" placeholder="Enter your name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="usersEmail" placeholder="Enter your Email" required><br>
+                    <label name="message">Message:</label><br>
+                    <textarea id="name" name="usersMessage" placeholder="Enter your message" required></textarea><br>
+                    <button id="btn-submit" type="submit">Submit</button>
+        </form>
+    </section>
 
-         <section id="message">
-            <h2>Messages</h2>
-            <ul></ul>
+    <section id="message">
+        <h2>Messages</h2>
+        <ul></ul>
 
-         </section>
-        <footer> </footer>
+    </section>
+    <footer> </footer>
 
-        <script src="js/index.js"></script>
-    </body>
+    <script src="js/index.js"></script>
+</body>
+
 </html>

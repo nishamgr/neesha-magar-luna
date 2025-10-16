@@ -1,9 +1,10 @@
 body {
-    padding-top: 70px;
-    background-color:	#d7c1b3;
-    color: #333;
-    font-family:'Times New Roman', Times, serif;
+  padding-top: 70px;
+  background-color: #d7c1b3;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
 }
+
 /* 
 .off-screen-menu {
   background-color: rgb(34, 37, 49);
@@ -27,82 +28,82 @@ body {
 }
 
 nav {
-    padding: 1rem;
-    display: flex;
-    background-color: rgb(34, 37, 49);
-  }
+  padding: 1rem;
+  display: flex;
+  background-color: rgb(34, 37, 49);
+}
 
-  /* .ham-menu {
+/* .ham-menu {
     height: 50px;
     width: 50px;
     margin-left: auto;
     position: relative;
   } */
 
-  .ham-menu span {
-    height: 5px;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s ease;
-  }
+.ham-menu span {
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
 
-  .ham-menu span:nth-child(1) {
-    top: 25%;
-  }
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
 
-  .ham-menu span:nth-child(3) {
-    top: 75%;
-  }
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
 
-  .ham-menu.active span:nth-child(1) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
 
-  .ham-menu.active span:nth-child(2) {
-    opacity: 0;
-  }
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
 
-  .ham-menu.active span:nth-child(3) {
-    top: 50%;
-    transform: translate(-50%, 50%) rotate(-45deg);
-  }
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, 50%) rotate(-45deg);
+}
 
-  .nav {
-    display: flex;
-    align-items: center;
-    background-color: rgb(34, 37, 49);
-    padding: 10px 20px;
-    flex-wrap: wrap;
-  }
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: rgb(34, 37, 49);
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
 
-  .nav a {
-    display: inline-block;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+.nav a {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  .nav a:visited {
-    color:white;
-  }
-  
-  .nav a:hover {
-    text-decoration: underline;
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .nav a.active {
-    background-color: #949a98;
-    color: white;
-  }
-  
+.nav a:visited {
+  color: white;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a.active {
+  background-color: #949a98;
+  color: white;
+}
+
 /* Push the hamburger icon to the right */
 .nav .icon {
   margin-left: auto;
@@ -110,42 +111,44 @@ nav {
   cursor: pointer;
   display: none;
 }
-  
-  /* navigation responsive styles  */
-  @media screen and (max-width: 600px) {
-    .nav a:not(:first-child) {
-      display: none;
-    }
-    
-    .nav a.icon {
-      float: right;
-      display: block;
-    }
-    .nav.responsive{
-      flex-direction: column;
+
+/* navigation responsive styles  */
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {
+    display: none;
+  }
+
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .nav.responsive {
+    flex-direction: column;
     align-items: flex-start;
-      }
-
-    .nav.responsive a {
-      display: block;
-      text-align:left;
-      width: 100%l;
-    }
   }
 
-  /* skills section responsive styles*/
-  
-  @media screen and (max-width: 600px) {
-    .skills-list{
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .skills-list li {
-      width: 100%;
-    }
+  .nav.responsive a {
+    display: block;
+    text-align: left;
+    width: 100%l;
   }
- /*
+}
+
+/* skills section responsive styles*/
+
+@media screen and (max-width: 600px) {
+  .skills-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills-list li {
+    width: 100%;
+  }
+}
+
+/*
 nav {
     position: sticky;
     top: 0;
@@ -157,82 +160,95 @@ nav {
 
 
 #section {
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid #ccc;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
 }
 
 #about {
-    text-align: center;
-    background-color: #faf6e9;
-    list-style: none;
-    gap: 20px;
-    padding: 0;
-    justify-content: center;
+  text-align: center;
+  background-color: #faf6e9;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  justify-content: center;
 }
 
 #about images {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
 #experience {
-    background-color: #ece8d9;
+  background-color: #ece8d9;
+  padding: 20px;
+  margin-bottom: 30px;
+
 }
 
 #experience ul {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
-    background-color: #ece8d9;
-    flex-direction: column;
-    align-items: flex-start;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  background-color: #ece8d9;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 #experience li {
-    display: inline-block;
-    background-color: rgb(249, 246, 246);
-    color: #333;
-    padding: 6px 12px;
-    border-radius: 15px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-weight: 500;
-    transition: transform 0.2s ease;
-  }
-  
-#experience li:hover {
-    transform: scale(1.03);
-  }
+  display: inline-block;
+  background-color: rgb(249, 246, 246);
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
 
-  .job{
-    margin-bottom: 2em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #ccc;
-  }
-  .job-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .job-title {
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  .job-dates{
-    color: #777;
-    font-size: 0.9em;
-  }
-  .job-description {
-    margin-top: 0.5em;
-  }
+#experience li:hover {
+  transform: scale(1.03);
+}
+
+.job {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.job-dates {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.job-description {
+  margin-top: 0.5em;
+}
+
+#projects {
+  background-color: #ece8d9;
+  padding: 20px;
+  margin-bottom: 30px;
+}
 
 #skills {
-    background-color: #ece8d9;
-    padding: 20px;
+  background-color: #ece8d9;
+  padding: 20px;
 }
 
 .skills-list {
@@ -272,31 +288,32 @@ nav {
 
 
 #connect {
-    background-color: #c7b198;
+  background-color: #c7b198;
 
 }
 
 #connect ul {
-    padding: 20px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 20px;
-    justify-content: none;
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: none;
 }
 
 #connect a {
-    color: rgb(24, 24, 26);
-    text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease;
+  color: rgb(24, 24, 26);
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 #connect a:hover {
-    color: #0b5ed7;
-    transform: scale(1.2);
+  color: #0b5ed7;
+  transform: scale(1.2);
 }
- /* style for the form container */
-#contact {
+
+/* style for the form container */
+#leaveamessage {
   max-width: 500px;
   width: 100%;
   margin: auto;
@@ -312,15 +329,15 @@ nav {
   align-items: center;
 }
 
-#btn-submit:active{
+#btn-submit:active {
   background-color: #0056b3;
   transform: translateY(2px);
   box-shadow: none;
 }
 
 #btn-submit,
-#contact input,
-#contact textarea {
+#leaveamessage input,
+#leaveamessage textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 12px;
@@ -335,11 +352,12 @@ nav {
   cursor: pointer;
 }
 
-#contact.zoomed {
+#leaveamessage.zoomed {
   transform: scale(1.03);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
-#contact li:hover {
+
+#leaveamessage li:hover {
   transform: scale(1.03);
 }
 
