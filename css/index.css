@@ -22,16 +22,16 @@ body {
   font-size: 3rem;
   transition: .3s ease;
 } */
-
-.off-screen-menu.active {
-  right: 0;
-}
-
 nav {
   padding: 1rem;
   display: flex;
   background-color: rgb(34, 37, 49);
 }
+
+.off-screen-menu.active {
+  right: 0;
+}
+
 
 /* .ham-menu {
     height: 50px;
@@ -40,6 +40,7 @@ nav {
     position: relative;
   } */
 
+ /* hamburger menu container */
 .ham-menu span {
   height: 5px;
   width: 100%;
@@ -73,35 +74,45 @@ nav {
   transform: translate(-50%, 50%) rotate(-45deg);
 }
 
+
 .nav {
   display: flex;
-  align-items: center;
-  background-color: rgb(34, 37, 49);
+  background-color: #c19a6b;
   padding: 10px 20px;
+  border-radius: 10px;
   flex-wrap: wrap;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .nav a {
   display: inline-block;
   color: white;
-  padding: 10px;
+  background-color: transparent;
+  padding: 20px 10px;
   text-decoration: none;
-  font-size: 17px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.nav a:visited {
+/* .nav a:visited {
   color: white;
-}
+} */
 
 .nav a:hover {
   text-decoration: underline;
-  background-color: #ddd;
-  color: black;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+
 }
 
 .nav a.active {
-  background-color: #949a98;
+  background-color: #a97f50;
   color: white;
+  border-radius: 10px;
+  font-weight: 700;
 }
 
 /* Push the hamburger icon to the right */
@@ -161,7 +172,7 @@ nav {
 
 #section {
   margin: 20px;
-  padding: 20px;
+  padding-top: 20px;
   border: 2px solid #ccc;
 }
 
@@ -169,8 +180,9 @@ nav {
   text-align: center;
   background-color: #faf6e9;
   list-style: none;
-  gap: 20px;
-  padding: 0;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
   justify-content: center;
 }
 
@@ -184,6 +196,7 @@ nav {
 #experience {
   background-color: #ece8d9;
   padding: 20px;
+  border-radius: 10px;
   margin-bottom: 30px;
 
 }
@@ -240,15 +253,46 @@ nav {
   margin-top: 0.5em;
 }
 
+/* Container for Projects Section */
 #projects {
   background-color: #ece8d9;
   padding: 20px;
   margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+#projects h2{
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+#projects li:hover{
+  color: #007acc;
+  cursor: pointer;
+  transform: translateX(5px);
+}
+
+#projects ul{
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#projects li{
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+/* Container for Skills Section*/
 #skills {
   background-color: #ece8d9;
   padding: 20px;
+  border-radius: 15px;
 }
 
 .skills-list {
@@ -274,7 +318,7 @@ nav {
 #skills li {
   background-color: rgb(249, 246, 246);
   padding: 10px 15px;
-  border-radius: 6px;
+  border-radius: 10px;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   color: #333;
@@ -284,11 +328,16 @@ nav {
 
 #skills li:hover {
   transform: scale(1.03);
+  cursor: pointer;
 }
 
-
+/* Container for Connect Section */
 #connect {
   background-color: #c7b198;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
 }
 
@@ -333,6 +382,12 @@ nav {
   background-color: #0056b3;
   transform: translateY(2px);
   box-shadow: none;
+}
+
+/* Container for message Section*/
+#message{
+  padding: 20px;
+  margin-top: 20px;
 }
 
 #btn-submit,
