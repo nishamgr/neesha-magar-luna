@@ -37,11 +37,6 @@ const hamMenu = document.querySelector('.ham-menu');
 
 const offScreenMenu = document.querySelector('.off-screen-menu');
 
-// hamMenu.addEventListener('click', () => {
-//     hamMenu.classList.toggle('active');
-//     offScreenMenu.classList.toggle('active');
-// })
-
 //footer setup
 const body = document.body; //reference to the <body> elemnt
 const footerElement = document.createElement('footer'); //new footer element
@@ -52,6 +47,9 @@ const footer = document.querySelector('footer'); //select the <footer> element f
 const copyright = document.createElement('p'); // new <p> element
 copyright.innerHTML = `&copy; ${thisYear} Neesha Magar`; //inner HTML 
 footer.appendChild(copyright); //appending the <p> to the footer
+
+//Hide Message output section if empty
+
 
 //append skills to the #skills section
 const skills = ['JavaScript', 'HTML', 'CSS', 'SQL', 'GIT'];
@@ -91,11 +89,19 @@ form.addEventListener('submit', function (event) {
   removeButton.innerText = "Remove";  //set inner text to  "remove" 
   removeButton.setAttribute("type", "button"); //set the type attribute to button
 
+  //Show message section
+  messageSection.style.display = "inline-block";
+  //Scroll to Message
+  messageSection.scrollIntoView({ behavior: "smooth" });
+  
   removeButton.classList.add("removeButton");
 
   removeButton.addEventListener("click", function () {  //added eventListner to remove button
     const entry = removeButton.parentNode; //find parent element
     entry.remove(); //removes entry ele from DOM
+
+    //Hide Message output section
+    document.getElementById("message").style.display = "none";
   });
 
   newMessage.appendChild(removeButton);
